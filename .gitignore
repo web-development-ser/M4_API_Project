@@ -1,3 +1,5 @@
-# Ignorar o diretório node_modules
+# Ignorar o diretório node_modules.
 node_modules/
-src/db
+src/db/add.js
+src/db/data.animes.js
+# Atualizar arquivo de add objs...
