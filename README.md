@@ -1,7 +1,6 @@
 # Mini Projeto (M4): Aplicação Web Back End para Gerenciamento de ANM
 ```(A - Animes, N - Novels, M - Mangas );```
 
-
 ## Base de Construção:
 Este mini projeto visa desenvolver uma aplicação web Back End utilizando ferramentas do Node.js, seguindo o padrão MVC (Model-View-Controller) para organizar as responsabilidades na aplicação. A aplicação permite criar, listar, filtrar, atualizar e deletar dados de ANM (animes, novels, mangas) por meio de algumas rotas.
 ## Descrição do Projeto:
@@ -56,4 +55,4 @@ Para testes, há um arquivo no diretório `./db` que armazena alguns dados JSON 
 ## Como Executar
 1. Clone o repositório:
    ```sh
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/web-development-ser/M4_API_Project.git
