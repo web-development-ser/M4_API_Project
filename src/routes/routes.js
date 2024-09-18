@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { classAddAnm, fullCategoryList, listToAnimes, listToNovels, listToMangas, anmUpdate, anmDeletClass } from '../controller/anime.controller.js';
+import { classAddAnm, fullCategoryList, listToAnimes, listToNovels, listToMangas, anmUpdate, anmDeletClass, listToAlls } from '../controller/anime.controller.js';
 
 const routesCategoryAnm = Router();
 
@@ -36,6 +36,12 @@ routesCategoryAnm.patch("/anm/anmUpdate/:id", (req, res) => {
 routesCategoryAnm.delete('/anm/delet/:id', (req, res) => {
     const { id } = req.params;
     const user = anmDeletClass(id);
+    res.status(200).json({user});
+});
+
+routesCategoryAnm.get('/anm/qual/:text', (req, res) => {
+    const { text } = req.params;
+    const user = listToAlls(text);
     res.status(200).json({user});
 });
 

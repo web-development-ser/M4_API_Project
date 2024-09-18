@@ -28,6 +28,13 @@ export const listToMangas = () => {
     return m;
 };
 
+
+export const listToAlls = (text) => {
+    let v = arrayCategory.filter (item => item.type == text);
+    return v;
+};
+
+
 export const anmUpdate = (id, type) => {
     const verificExistsID = arrayCategory.find(item => item.id == id);
 
